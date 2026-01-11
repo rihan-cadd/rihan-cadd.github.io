@@ -10,22 +10,19 @@ redirect_from:
 {% include base_path %}
 
 <style>
-/* 다크모드 버튼 숨기기 */
-.theme-toggle, button[title="Toggle theme"] { display: none !important; }
-
 /* CV 전용 스타일 */
 .cv-container {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   color: #2d3748;
 }
 
-/* 섹션 헤더 (간격 축소) */
+/* 섹션 헤더 */
 .cv-section-title {
   font-size: 1.4rem;
   font-weight: 700;
   color: #1a202c;
-  margin-top: 40px; /* 위쪽 여백 축소 */
-  margin-bottom: 15px; /* 아래쪽 여백 축소 */
+  margin-top: 40px;
+  margin-bottom: 15px;
   display: flex;
   align-items: center;
 }
@@ -37,14 +34,14 @@ redirect_from:
   margin-left: 15px;
 }
 
-/* 카드 스타일 (간격 축소) */
+/* 카드 스타일 */
 .cv-card {
   background: #fff;
-  margin-bottom: 15px; /* 카드 간 간격을 30px -> 15px로 축소 */
+  margin-bottom: 15px;
   padding: 15px;
   border-left: 3px solid transparent;
   transition: all 0.2s ease-in-out;
-  border: 1px solid #e2e8f0; /* 테두리 추가하여 깔끔하게 */
+  border: 1px solid #e2e8f0;
   border-radius: 6px;
 }
 
@@ -195,17 +192,28 @@ ul.cv-list li::before { content: "•"; position: absolute; left: 0; color: #318
     </div>
   </div>
 
-  <div class="cv-section-title">💻 Development Projects</div>
+  <div class="cv-section-title">💻 Key Research & Development Projects</div>
 
   <div class="cv-card">
-    [cite_start]<div class="cv-item-title">ProtHub: Integrated Platform for Protein-Ligand Interactions [cite: 1, 2, 3]</div>
+    <div class="cv-item-title">ProtHub: Integrated Platform for Protein-Ligand Interactions</div>
     <div class="cv-item-subtitle">Designed to consolidate scattered biological data and facilitate efficient analysis.</div>
     <ul class="cv-list" style="margin-top:10px;">
-      [cite_start]<li><strong>Data Integration:</strong> Integrated heterogeneous data from UniProt, PDB, ChEMBL, and InterPro to construct a unified database for ligand-binding proteins. [cite: 2, 4]</li>
-      [cite_start]<li><strong>Chemical Space Visualization:</strong> Implemented interactive 2D visualization (t-SNE, PCA, UMAP) using Morgan fingerprints and Tanimoto coefficients to analyze ligand distribution. [cite: 1, 3]</li>
-      [cite_start]<li><strong>Web Features:</strong> Developed sequence similarity search (BLAST), detailed protein annotation pages, and sequence-identity heatmaps for intuitive analysis. [cite: 1, 3]</li>
+      <li><strong>Data Integration:</strong> Integrated heterogeneous data from UniProt, PDB, ChEMBL, and InterPro.</li>
+      <li><strong>Visualization:</strong> Implemented 2D Chemical Space visualization (t-SNE/PCA) and sequence-identity heatmaps.</li>
+      <li><strong>Web Stack:</strong> Built a comprehensive web platform for searching and analyzing ligand-binding proteins.</li>
     </ul>
     <div class="cv-date">Bioinformatics Web Platform</div>
+  </div>
+
+  <div class="cv-card">
+    <div class="cv-item-title">GROMACS-based FEP Protocol for Membrane Proteins</div>
+    <div class="cv-item-subtitle">Established a robust Free Energy Perturbation (FEP) workflow for GPCR-ligand systems in lipid bilayers.</div>
+    <ul class="cv-list" style="margin-top:10px;">
+      <li><strong>System Setup:</strong> Automated embedding of GPCRs into POPC lipid bilayers and equilibration protocols using GROMACS.</li>
+      <li><strong>FEP Optimization:</strong> Optimized &lambda;-stratification and soft-core potentials to handle sampling difficulties in dense membrane environments.</li>
+      <li><strong>Validation:</strong> Validated the protocol by reproducing experimental binding affinities for P2Y/P1 receptors with high accuracy.</li>
+    </ul>
+    <div class="cv-date">Simulation Methodology & Pipeline</div>
   </div>
 
   <div class="cv-section-title">🏆 Honors & Awards</div>
