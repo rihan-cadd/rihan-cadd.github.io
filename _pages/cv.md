@@ -208,15 +208,15 @@ ul.cv-list li::before { content: "•"; position: absolute; left: 0; color: #318
     <div class="cv-date">Bioinformatics Web Platform</div>
   </div>
 
-  <div class="cv-card">
+<div class="cv-card">
     <div class="cv-item-title">GROMACS-based FEP Protocol for Membrane Proteins</div>
-    <div class="cv-item-subtitle">Established a robust Free Energy Perturbation (FEP) workflow for GPCR-ligand systems in lipid bilayers.</div>
+    <div class="cv-item-subtitle">Currently developing a Free Energy Perturbation (FEP) workflow for GPCR-ligand systems.</div>
     <ul class="cv-list" style="margin-top:10px;">
-      <li><strong>System Setup:</strong> Automated embedding of GPCRs into POPC lipid bilayers and equilibration protocols using GROMACS.</li>
-      <li><strong>FEP Optimization:</strong> Optimized &lambda;-stratification and soft-core potentials to handle sampling difficulties in dense membrane environments.</li>
-      <li><strong>Validation:</strong> Validated the protocol by reproducing experimental binding affinities for P2Y/P1 receptors with high accuracy.</li>
+      <li><strong>Methodology Development:</strong> Establishing protocols for embedding GPCRs into lipid bilayers and setting up equilibration runs using GROMACS.</li>
+      <li><strong>Optimization:</strong> Investigating optimal &lambda;-stratification and soft-core potentials to improve sampling efficiency in membrane environments.</li>
+      <li><strong>Benchmarking:</strong> Conducting validation studies on P2Y/P1 receptors to assess the accuracy of binding affinity predictions.</li>
     </ul>
-    <div class="cv-date">Simulation Methodology & Pipeline</div>
+    <div class="cv-date">Ongoing Project</div>
   </div>
 
   <div class="cv-section-title">🏆 Honors & Awards</div>
