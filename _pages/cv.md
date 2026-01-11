@@ -160,7 +160,7 @@ ul.cv-list li::before { content: "•"; position: absolute; left: 0; color: #318
 
   <div class="cv-section-title">📜 Publications</div>
 
-  <div class="cv-card">
+<div class="cv-card">
     <strong style="font-size:1.05em; color:#e53e3e; display:block; margin-bottom:8px;">In Preparation / Under Review</strong>
     <ul class="cv-list">
       <li>
@@ -168,7 +168,7 @@ ul.cv-list li::before { content: "•"; position: absolute; left: 0; color: #318
         <span style="font-size:0.9em; color:#718096;">(In preparation)</span>
       </li>
       <li style="margin-top:8px;">
-        <strong>Promising Clue for a Functional Antagonism of FTY720-P by New Heterocyclic Analogues and Molecular Docking Analysis</strong><br>
+        <strong>Molecular Docking and SAR Studies of Novel Small Molecules Targeting Sphingosine-1-Phosphate Receptors</strong><br>
         <span style="font-size:0.9em; color:#718096;">(In preparation)</span>
       </li>
     </ul>
