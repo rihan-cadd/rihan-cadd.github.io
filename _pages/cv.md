@@ -125,19 +125,18 @@ redirect_from:
   <div class="cv-card">
     <span class="skill-category">Computational Chemistry & Simulation</span>
     <div>
-      <span class="skill-tag">GROMACS (Expert)</span>
+      <span class="skill-tag">GROMACS</span>
       <span class="skill-tag">Cresset Flare</span>
       <span class="skill-tag">Schrödinger Glide</span>
       <span class="skill-tag">AutoDock Vina</span>
       <span class="skill-tag">PyMOL / VMD</span>
     </div>
 
-    <span class="skill-category">Data Science & AI</span>
+    <span class="skill-category">Data Science & Informatics</span>
     <div>
-      <span class="skill-tag">PyTorch / TensorFlow</span>
-      <span class="skill-tag">Graph Neural Networks (GNN)</span>
-      <span class="skill-tag">Scikit-learn</span>
-      <span class="skill-tag">RDKit / Mordred</span>
+      <span class="skill-tag">RDKit</span>
+      <span class="skill-tag">Morgan Fingerprints</span>
+      <span class="skill-tag">Clustering</span>
     </div>
 
     <span class="skill-category">Environment & Tools (Detailed)</span>
@@ -146,7 +145,7 @@ redirect_from:
       <span class="skill-tag">HPC Cluster (Slurm)</span>
       <span class="skill-tag">Git/GitHub</span>
       <span class="skill-tag">Python Scripting</span>
-      <span class="skill-tag">HTML/CSS</span>
+      <span class="skill-tag">HTML/CSS/PHP/JS</span>
     </div>
   </div>
 
