@@ -10,9 +10,6 @@ redirect_from:
 {% include base_path %}
 
 <style>
-/* 다크모드 버튼 숨기기 (필요 시 class 확인 필요) */
-.theme-toggle, button[title="Toggle theme"] { display: none !important; }
-
 /* Publications 페이지와 동일한 디자인 시스템 적용 */
 .cv-container {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
