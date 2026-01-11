@@ -5,32 +5,160 @@ permalink: /publications/
 author_profile: true
 ---
 
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
+You can also find my articles on <a href="https://scholar.google.com/citations?user=kexhv28AAAAJ" target="_blank" style="text-decoration:none; color:#2a7ae2; font-weight:600;">Google Scholar</a>.
 
 {% include base_path %}
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
+<style>
+/* Modern & Minimalist Style */
+.pub-container {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* 연도 헤더 스타일 */
+.year-header {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1a202c;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+.year-header::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #e2e8f0;
+  margin-left: 15px;
+}
+
+/* 논문 아이템 카드 */
+.pub-item {
+  margin-bottom: 30px;
+  padding-left: 15px;
+  border-left: 3px solid transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+.pub-item:hover {
+  border-left: 3px solid #3182ce;
+  background-color: #f7fafc;
+}
+
+/* 논문 제목 */
+.pub-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #2d3748;
+  text-decoration: none !important;
+  line-height: 1.4;
+  display: block;
+  margin-bottom: 6px;
+  transition: color 0.2s;
+}
+
+.pub-title:hover {
+  color: #3182ce;
+}
+
+/* 저자 목록 */
+.pub-authors {
+  font-size: 0.95rem;
+  color: #4a5568;
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+/* 메타 정보 (저널명, 역할, DOI) */
+.pub-meta-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 0.85rem;
+}
+
+/* 뱃지 스타일 */
+.badge {
+  padding: 3px 8px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.8rem;
+  letter-spacing: 0.02em;
+}
+
+.badge-journal {
+  background-color: #edf2f7;
+  color: #2d3748;
+  border: 1px solid #e2e8f0;
+}
+
+.badge-role {
+  background-color: #fff5f5;
+  color: #c53030;
+  border: 1px solid #fed7d7;
+}
+
+/* DOI 링크 스타일 (텍스트형) */
+.link-doi {
+  color: #718096;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+  border-bottom: 1px dotted #cbd5e0;
+}
+.link-doi:hover {
+  color: #3182ce;
+  border-bottom: 1px solid #3182ce;
+}
+
+/* 각주 스타일 */
+.footnote {
+  margin-top: 50px;
+  font-size: 0.85rem;
+  color: #a0aec0;
+  border-top: 1px solid #e2e8f0;
+  padding-top: 15px;
+}
+</style>
+
+<div class="pub-container">
+
+  {% assign postsByYear = site.publications | group_by_exp: "post", "post.date | date: '%Y'" %}
+  
+  {% for year in postsByYear %}
+    <div class="year-header">{{ year.name }}</div>
+    
+    {% for post in year.items %}
+      <div class="pub-item">
+        <a href="{% if post.paperurl %}{{ post.paperurl }}{% else %}{{ post.url }}{% endif %}" target="_blank" class="pub-title">
+          {{ post.title }}
+        </a>
+
+        <div class="pub-authors">
+          {{ post.authors }}
+        </div>
+
+        <div class="pub-meta-row">
+          {% if post.venue %}
+            <span class="badge badge-journal">{{ post.venue }}</span>
+          {% endif %}
+          
+          {% if post.role %}
+            <span class="badge badge-role">{{ post.role }}</span>
+          {% endif %}
+          
+          {% if post.paperurl %}
+            <a href="{{ post.paperurl }}" target="_blank" class="link-doi">DOI ↗</a>
+          {% endif %}
+        </div>
+      </div>
     {% endfor %}
   {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
 
+  <div class="footnote">
+    * denotes corresponding author. † denotes co-first author.
+  </div>
 
-
+</div>
