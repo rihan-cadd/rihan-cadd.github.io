@@ -1,16 +1,79 @@
 ---
 layout: archive
-title: "Talks and presentations"
+title: "Talks and Presentations"
 permalink: /talks/
 author_profile: true
 ---
 
-{% if site.talkmap_link == true %}
+{% include base_path %}
 
-<p style="text-decoration:underline;"><a href="/talkmap.html">See a map of all the places I've given a talk!</a></p>
+<style>
+/* Publications와 동일한 디자인 시스템 적용 */
+.talk-container { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; }
 
-{% endif %}
+/* 연도 헤더 */
+.year-header {
+  font-size: 1.5rem; font-weight: 700; color: #1a202c;
+  margin-top: 50px; margin-bottom: 20px; display: flex; align-items: center;
+}
+.year-header::after { content: ""; flex: 1; height: 1px; background: #e2e8f0; margin-left: 15px; }
 
-{% for post in site.talks reversed %}
-  {% include archive-single-talk.html %}
-{% endfor %}
+/* 발표 아이템 카드 */
+.talk-item {
+  margin-bottom: 30px; padding-left: 15px; border-left: 3px solid transparent; transition: all 0.2s ease-in-out;
+}
+.talk-item:hover { border-left: 3px solid #6b46c1; background-color: #faf5ff; } /* 보라색 호버 효과 */
+
+/* 발표 제목 */
+.talk-title {
+  font-size: 1.15rem; font-weight: 600; color: #2d3748;
+  text-decoration: none !important; line-height: 1.4; display: block; margin-bottom: 6px;
+}
+
+/* 메타 정보 (장소, 날짜) */
+.talk-meta { font-size: 0.95rem; color: #4a5568; margin-bottom: 8px; }
+
+/* 뱃지 스타일 */
+.badge { padding: 3px 8px; border-radius: 6px; font-weight: 600; font-size: 0.8rem; letter-spacing: 0.02em; margin-right: 8px; }
+
+/* Oral 뱃지 (보라색) */
+.badge-oral { background-color: #f3e5f5; color: #7b1fa2; border: 1px solid #e1bee7; }
+/* Poster 뱃지 (청록색) */
+.badge-poster { background-color: #e0f2f1; color: #00796b; border: 1px solid #b2dfdb; }
+
+/* 수상 내역 강조 */
+.award-note {
+  font-size: 0.9rem; color: #c53030; font-weight: 600; margin-top: 5px; display: block;
+}
+</style>
+
+<div class="talk-container">
+
+  {% assign sorted_talks = site.talks | sort: 'date' | reverse %}
+  {% assign talksByYear = sorted_talks | group_by_exp: "post", "post.date | date: '%Y'" %}
+  
+  {% for year in talksByYear %}
+    <div class="year-header">{{ year.name }}</div>
+    
+    {% for post in year.items %}
+      <div class="talk-item">
+        <div class="talk-title">{{ post.title }}</div>
+
+        <div class="talk-meta" style="display:flex; align-items:center; flex-wrap:wrap;">
+          {% if post.type == "Oral Presentation" %}
+            <span class="badge badge-oral">🎤 Oral</span>
+          {% else %}
+            <span class="badge badge-poster">📊 Poster</span>
+          {% endif %}
+          
+          <span><strong>{{ post.venue }}</strong> &nbsp;·&nbsp; {{ post.location }}</span>
+        </div>
+
+        <div style="font-size: 0.9rem; color: #666; line-height: 1.5;">
+          {{ post.content | remove: '<p>' | remove: '</p>' }}
+        </div>
+      </div>
+    {% endfor %}
+  {% endfor %}
+
+</div>
