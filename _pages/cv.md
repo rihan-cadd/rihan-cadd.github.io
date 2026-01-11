@@ -10,17 +10,52 @@ redirect_from:
 {% include base_path %}
 
 <style>
-/* CV 전용 스타일 */
+/* CV 전용 스타일 - 다른 페이지와 톤앤매너 통일 */
 .cv-container { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; color: #2d3748; }
-.cv-section-title { font-size: 1.5rem; font-weight: 700; color: #1a202c; margin-top: 50px; margin-bottom: 20px; border-bottom: 2px solid #e2e8f0; padding-bottom: 10px; display: flex; align-items: center; }
-.cv-card { background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 20px; margin-bottom: 20px; border-left: 4px solid transparent; transition: all 0.2s ease-in-out; }
-.cv-card:hover { border-left: 4px solid #3182ce; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+
+/* 섹션 헤더 */
+.cv-section-title {
+  font-size: 1.5rem; font-weight: 700; color: #1a202c;
+  margin-top: 50px; margin-bottom: 20px; border-bottom: 2px solid #e2e8f0; padding-bottom: 10px;
+  display: flex; align-items: center;
+}
+
+/* 카드 스타일 */
+.cv-card {
+  background: #fff; border: 1px solid #e2e8f0; border-radius: 8px;
+  padding: 20px; margin-bottom: 20px;
+  border-left: 4px solid transparent; /* 호버 효과용 */
+  transition: all 0.2s ease-in-out;
+}
+.cv-card:hover {
+  border-left: 4px solid #3182ce; /* 마우스 올리면 파란색 포인트 */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+/* 타이틀과 날짜 */
 .cv-item-title { font-size: 1.15rem; font-weight: 600; color: #2d3748; margin-bottom: 5px; }
 .cv-item-subtitle { font-size: 1rem; color: #4a5568; margin-bottom: 5px; }
 .cv-date { font-size: 0.9rem; color: #718096; font-weight: 500; display: inline-block; background: #edf2f7; padding: 2px 8px; border-radius: 4px; margin-top:5px;}
-.skill-tag { display: inline-block; background-color: #ebf8ff; color: #2c5282; padding: 4px 10px; border-radius: 15px; font-size: 0.85rem; font-weight: 600; margin-right: 5px; margin-bottom: 5px; border: 1px solid #bee3f8; }
+
+/* 스킬 태그 스타일 */
+.skill-tag {
+  display: inline-block; background-color: #ebf8ff; color: #2c5282;
+  padding: 4px 10px; border-radius: 15px; font-size: 0.85rem; font-weight: 600;
+  margin-right: 5px; margin-bottom: 5px; border: 1px solid #bee3f8;
+}
 .skill-category { font-weight: 700; color: #2c3e50; margin-bottom: 8px; display: block; margin-top: 10px; }
-.btn-download { background-color: #2c3e50; color: white !important; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 0.95em; transition: background 0.2s; display: inline-block; }
+
+/* 리스트 스타일 제거 */
+ul.cv-list { list-style: none; padding: 0; margin: 0; }
+ul.cv-list li { margin-bottom: 5px; padding-left: 15px; position: relative; }
+ul.cv-list li::before { content: "•"; position: absolute; left: 0; color: #3182ce; }
+
+/* 버튼 스타일 */
+.btn-download {
+  background-color: #2c3e50; color: white !important; padding: 10px 20px;
+  border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 0.95em;
+  transition: background 0.2s; display: inline-block;
+}
 .btn-download:hover { background-color: #1a202c; }
 </style>
 
@@ -36,7 +71,7 @@ redirect_from:
     <div style="margin-bottom: 15px;">
       <strong style="color:#2c5282;">Thesis Interest (Ph.D.)</strong>
       <p style="margin: 5px 0 0 0; color:#4a5568;">
-        Hybridizing physics-based simulations (FEP/MD) with data-driven AI (GNN) for precise structure-based drug design, specifically targeting GPCRs and metabolic enzymes.
+        Hybridizing physics-based simulations (FEP/MD) with <strong>data-driven AI</strong> for precise structure-based drug design, specifically targeting GPCRs and metabolic enzymes.
       </p>
     </div>
     
@@ -73,11 +108,11 @@ redirect_from:
     <ul style="margin-top:10px; padding-left:20px; line-height:1.6;">
       <li style="margin-bottom:10px;">
         <strong>CYP-MAP: Comprehensive Database and Multi-Level GNN Model for Site of Metabolism (SoM) Prediction</strong><br>
-        <span style="color:#555;"><strong>Han R</strong>, et al. (In preparation)</span>
+        <span style="color:#555;">(In preparation)</span>
       </li>
       <li>
         <strong>Promising Clue for a Functional Antagonism of FTY720-P by New Heterocyclic Analogues and Molecular Docking Analysis</strong><br>
-        <span style="color:#555;"><strong>Han R</strong>, et al. (In preparation)</span>
+        <span style="color:#555;">(In preparation)</span>
       </li>
     </ul>
   </div>
