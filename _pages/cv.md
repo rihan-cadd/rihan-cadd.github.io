@@ -19,7 +19,7 @@ redirect_from:
   color: #2d3748;
 }
 
-/* 섹션 헤더 (간격 축소) */
+/* 섹션 헤더 */
 .cv-section-title {
   font-size: 1.4rem;
   font-weight: 700;
@@ -128,11 +128,9 @@ ul.cv-list li::before { content: "•"; position: absolute; left: 0; color: #318
 
   <div class="cv-card" style="border-left: 3px solid #2c3e50; background-color: #f7fafc;">
     <h3 style="margin-top:0; color:#2c3e50; font-size: 1.2rem; margin-bottom: 10px;">🔬 Research Interests</h3>
-    
     <div>
-      <strong style="color:#2c5282;">Thesis Interest (Ph.D.)</strong>
       <p style="margin: 5px 0 0 0; color:#4a5568; font-size: 0.95rem; line-height: 1.6;">
-        Utilizing <strong>physics-based simulations (FEP/MD)</strong> and developing <strong>bioinformatics platforms</strong> for precise structure-based drug design, specifically targeting GPCRs and metabolic enzymes.
+        Specializing in <strong>Structure-Based Drug Design (SBDD)</strong> by integrating physics-based simulations (FEP/MD) with cheminformatics, specifically targeting GPCRs and metabolic enzymes.
       </p>
     </div>
   </div>
@@ -158,24 +156,9 @@ ul.cv-list li::before { content: "•"; position: absolute; left: 0; color: #318
     <div class="cv-date">Mar 2009 - Feb 2013</div>
   </div>
 
-  <div class="cv-section-title">📜 Publications</div>
-
-<div class="cv-card">
-    <strong style="font-size:1.05em; color:#e53e3e; display:block; margin-bottom:8px;">In Preparation / Under Review</strong>
-    <ul class="cv-list">
-      <li>
-        <strong>CYP-MAP: Comprehensive Database and Multi-Level GNN Model for Site of Metabolism (SoM) Prediction</strong><br>
-        <span style="font-size:0.9em; color:#718096;">(In preparation)</span>
-      </li>
-      <li style="margin-top:8px;">
-        <strong>Molecular Docking and SAR Studies of Novel Small Molecules Targeting Sphingosine-1-Phosphate Receptors</strong><br>
-        <span style="font-size:0.9em; color:#718096;">(In preparation)</span>
-      </li>
-    </ul>
-  </div>
+  <div class="cv-section-title">📜 Publications (Selected)</div>
 
   <div class="cv-card">
-    <strong style="font-size:1.05em; color:#2c5282; display:block; margin-bottom:8px;">Published (Selected)</strong>
     <ul class="cv-list">
       <li>
         <strong>MetaboGNN: predicting liver metabolic stability with graph neural networks...</strong><br>
@@ -193,30 +176,6 @@ ul.cv-list li::before { content: "•"; position: absolute; left: 0; color: #318
     <div style="text-align:right; margin-top:10px;">
       <a href="/publications/" style="color:#3182ce; font-weight:bold; text-decoration:none; font-size:0.85rem;">View All Publications →</a>
     </div>
-  </div>
-
-  <div class="cv-section-title">💻 Key Research & Development Projects</div>
-
-  <div class="cv-card">
-    <div class="cv-item-title">ProtHub: Integrated Platform for Protein-Ligand Interactions</div>
-    <div class="cv-item-subtitle">Designed to consolidate scattered biological data and facilitate efficient analysis.</div>
-    <ul class="cv-list" style="margin-top:10px;">
-      <li><strong>Data Integration:</strong> Integrated heterogeneous data from UniProt, PDB, ChEMBL, and InterPro.</li>
-      <li><strong>Visualization:</strong> Implemented 2D Chemical Space visualization (t-SNE/PCA) and sequence-identity heatmaps.</li>
-      <li><strong>Web Stack:</strong> Built a comprehensive web platform for searching and analyzing ligand-binding proteins.</li>
-    </ul>
-    <div class="cv-date">Bioinformatics Web Platform</div>
-  </div>
-
-<div class="cv-card">
-    <div class="cv-item-title">GROMACS-based FEP Protocol for Membrane Proteins</div>
-    <div class="cv-item-subtitle">Currently developing a Free Energy Perturbation (FEP) workflow for GPCR-ligand systems.</div>
-    <ul class="cv-list" style="margin-top:10px;">
-      <li><strong>Methodology Development:</strong> Establishing protocols for embedding GPCRs into lipid bilayers and setting up equilibration runs using GROMACS.</li>
-      <li><strong>Optimization:</strong> Investigating optimal &lambda;-stratification and soft-core potentials to improve sampling efficiency in membrane environments.</li>
-      <li><strong>Benchmarking:</strong> Conducting validation studies on P2Y/P1 receptors to assess the accuracy of binding affinity predictions.</li>
-    </ul>
-    <div class="cv-date">Ongoing Project</div>
   </div>
 
   <div class="cv-section-title">🏆 Honors & Awards</div>
@@ -258,7 +217,7 @@ ul.cv-list li::before { content: "•"; position: absolute; left: 0; color: #318
       <span class="skill-tag">RDKit</span>
       <span class="skill-tag">Morgan Fingerprints</span>
       <span class="skill-tag">Tanimoto Similarity</span>
-      <span class="skill-tag">Clustering (t-SNE/PCA)</span>
+      <span class="skill-tag">Clustering</span>
     </div>
 
     <span class="skill-category">Web & Environment</span>
@@ -267,7 +226,7 @@ ul.cv-list li::before { content: "•"; position: absolute; left: 0; color: #318
       <span class="skill-tag">HPC Cluster (Slurm)</span>
       <span class="skill-tag">Git/GitHub</span>
       <span class="skill-tag">Python Scripting</span>
-      <span class="skill-tag">HTML/CSS/JS</span>
+      <span class="skill-tag">HTML/CSS</span>
     </div>
   </div>
 
