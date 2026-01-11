@@ -97,15 +97,17 @@ My research focuses on **Computer-Aided Drug Design (CADD)**, bridging the gap b
 ## 🛠 Technical Skills
 
 **Computational Chemistry & Simulation**
+* **Free Energy Calculation:** * **GROMACS** (Alchemical Free Energy Perturbation, ABFE/RBFE)
+    * **Cresset Flare** (FEP for lead optimization)
+    * MM-PBSA/GBSA binding energy estimation
+* **Molecular Dynamics:** GROMACS
 * **Docking & Virtual Screening:** Schrödinger Glide (SP/XP), AutoDock Vina, Ensemble Docking
-* **Free Energy Calculation:** FEP+ (Schrödinger), Relative Binding Free Energy (RBFE), MM-PBSA/GBSA
-* **Molecular Dynamics:** GROMACS (Expert), Desmond, PLUMED (Enhanced Sampling)
-* **Homology Modeling & QSAR:** 3D-QSAR, Pharmacophore Modeling
+* **Molecular Visualization:** PyMOL, VMD (Visual Molecular Dynamics)
 
-**Data Science & AI**
-* **Deep Learning:** Graph Neural Networks (GNN), Generative Models (for de novo design), PyTorch, TensorFlow
-* **Cheminformatics:** RDKit, Mordred, Morgan Fingerprints, Clustering
-* **Programming:** Python, R, Linux Shell Scripting, Git/GitHub
+**Data Science & Informatics**
+#* **Deep Learning:** Graph Neural Networks (GNN), Generative Models (for *de novo* design), PyTorch, TensorFlow
+* **Cheminformatics:** RDKit, Mordred, Morgan Fingerprints, Clustering analysis
+* **Programming & Web:** Python, R, Linux Shell Scripting, **HTML/CSS/php**, Git/GitHub
 
 ---
 
