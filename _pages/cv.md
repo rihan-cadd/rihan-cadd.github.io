@@ -73,8 +73,8 @@ ul.cv-list li::before { content: "•"; position: absolute; left: 0; color: #318
       My research focuses on <strong>Computer-Aided Drug Design (CADD)</strong>, bridging the gap between physics-based simulations and data-driven AI.
     </p>
     <ul class="cv-list">
-      <li><strong>Core Topics:</strong> Virtual Screening, Structure-Based Drug Design (SBDD), GPCR Selectivity (P1/P2Y)</li>
-      <li><strong>Methodologies:</strong> Free Energy Perturbation (FEP), Molecular Dynamics (MD), Graph Neural Networks (GNN), Generative AI</li>
+      <li><strong>Core Topics:</strong> Virtual Screening, Structure-Based Drug Design (SBDD), GPCR</li>
+      <li><strong>Methodologies:</strong> Protein-Ligand Docking, Molecular Dynamics (MD), Free Energy Perturbation (FEP)</li>
     </ul>
   </div>
 
@@ -187,7 +187,6 @@ ul.cv-list li::before { content: "•"; position: absolute; left: 0; color: #318
     <div>
       <span class="skill-tag">GROMACS (FEP/MD)</span>
       <span class="skill-tag">Cresset Flare</span>
-      <span class="skill-tag">MM-PBSA/GBSA</span>
       <span class="skill-tag">Schrödinger Glide</span>
       <span class="skill-tag">AutoDock Vina</span>
       <span class="skill-tag">PyMOL</span>
@@ -197,7 +196,6 @@ ul.cv-list li::before { content: "•"; position: absolute; left: 0; color: #318
     <span class="skill-category">Data Science & Informatics</span>
     <div>
       <span class="skill-tag">RDKit</span>
-      <span class="skill-tag">Mordred</span>
       <span class="skill-tag">Morgan Fingerprints</span>
       <span class="skill-tag">Clustering</span>
     </div>
