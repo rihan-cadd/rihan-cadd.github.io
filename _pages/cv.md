@@ -105,7 +105,7 @@ My research focuses on **Computer-Aided Drug Design (CADD)**, bridging the gap b
 * **Molecular Visualization:** PyMOL, VMD (Visual Molecular Dynamics)
 
 **Data Science & Informatics**
-#* **Deep Learning:** Graph Neural Networks (GNN), Generative Models (for *de novo* design), PyTorch, TensorFlow
+##* **Deep Learning:** Graph Neural Networks (GNN), Generative Models (for *de novo* design), PyTorch, TensorFlow
 * **Cheminformatics:** RDKit, Mordred, Morgan Fingerprints, Clustering analysis
 * **Programming & Web:** Python, R, Linux Shell Scripting, **HTML/CSS/php**, Git/GitHub
 
