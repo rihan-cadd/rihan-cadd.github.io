@@ -147,6 +147,7 @@ ul.cv-list li::before { content: "•"; position: absolute; left: 0; color: #318
   <div class="cv-card">
     <div class="cv-item-title">M.S. in Pharmacy</div>
     <div class="cv-item-subtitle">Chung-Ang University, Seoul, South Korea</div>
+    <div class="cv-item-subtitle">Division of Chem/Bioinformatics (Advisor: Prof. Yoonji Lee)</div>
     <div class="cv-date">Mar 2021 - Feb 2023</div>
   </div>
 
