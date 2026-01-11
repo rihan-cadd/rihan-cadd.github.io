@@ -126,11 +126,11 @@ ul.cv-list li::before { content: "•"; position: absolute; left: 0; color: #318
     <a href="#" class="btn-download">📥 Download CV (PDF)</a>
   </div>
 
-  <div class="cv-card" style="border-left: 3px solid #2c3e50; background-color: #f7fafc;">
+<div class="cv-card" style="border-left: 3px solid #2c3e50; background-color: #f7fafc;">
     <h3 style="margin-top:0; color:#2c3e50; font-size: 1.2rem; margin-bottom: 10px;">🔬 Research Interests</h3>
     <div>
       <p style="margin: 5px 0 0 0; color:#4a5568; font-size: 0.95rem; line-height: 1.6;">
-        Specializing in <strong>Structure-Based Drug Design (SBDD)</strong> by integrating physics-based simulations (FEP/MD) with cheminformatics, specifically targeting GPCRs and metabolic enzymes.
+        Specializing in <strong>Structure-Based Drug Design (SBDD)</strong> targeting <strong>GPCRs</strong> by integrating physics-based simulations (FEP/MD) with <strong>large-scale data analysis</strong>.
       </p>
     </div>
   </div>
