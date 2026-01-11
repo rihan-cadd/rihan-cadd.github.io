@@ -10,13 +10,16 @@ redirect_from:
 {% include base_path %}
 
 <style>
+/* 다크모드 버튼 숨기기 */
+.theme-toggle, button[title="Toggle theme"] { display: none !important; }
+
 /* CV 전용 스타일 */
 .cv-container {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   color: #2d3748;
 }
 
-/* 섹션 헤더 */
+/* 섹션 헤더 (간격 축소) */
 .cv-section-title {
   font-size: 1.4rem;
   font-weight: 700;
