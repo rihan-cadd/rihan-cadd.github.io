@@ -10,19 +10,22 @@ redirect_from:
 {% include base_path %}
 
 <style>
-/* Publications 페이지와 동일한 디자인 시스템 적용 */
+/* 다크모드 버튼 숨기기 */
+.theme-toggle, button[title="Toggle theme"] { display: none !important; }
+
+/* CV 전용 스타일 */
 .cv-container {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   color: #2d3748;
 }
 
-/* 섹션 헤더 (Publications의 연도 헤더와 동일 스타일) */
+/* 섹션 헤더 (간격 축소) */
 .cv-section-title {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 700;
   color: #1a202c;
-  margin-top: 50px;
-  margin-bottom: 20px;
+  margin-top: 40px; /* 위쪽 여백 축소 */
+  margin-bottom: 15px; /* 아래쪽 여백 축소 */
   display: flex;
   align-items: center;
 }
@@ -34,57 +37,60 @@ redirect_from:
   margin-left: 15px;
 }
 
-/* 카드 스타일 (Publications의 .pub-item 스타일 복사) */
+/* 카드 스타일 (간격 축소) */
 .cv-card {
-  background: #fff; /* 기본 흰색 배경 */
-  margin-bottom: 30px;
-  padding: 15px; /* 내부 여백 */
-  border-left: 3px solid transparent; /* 호버 효과를 위한 투명 테두리 */
+  background: #fff;
+  margin-bottom: 15px; /* 카드 간 간격을 30px -> 15px로 축소 */
+  padding: 15px;
+  border-left: 3px solid transparent;
   transition: all 0.2s ease-in-out;
+  border: 1px solid #e2e8f0; /* 테두리 추가하여 깔끔하게 */
+  border-radius: 6px;
 }
 
-/* 호버 효과 (Publications와 동일) */
+/* 호버 효과 */
 .cv-card:hover {
   border-left: 3px solid #3182ce;
   background-color: #f7fafc;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
 /* 타이틀과 서브타이틀 */
 .cv-item-title {
-  font-size: 1.15rem;
+  font-size: 1.1rem;
   font-weight: 600;
   color: #2d3748;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
   display: block;
 }
 
 .cv-item-subtitle {
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   color: #4a5568;
-  margin-bottom: 5px;
-  line-height: 1.5;
+  margin-bottom: 4px;
+  line-height: 1.4;
 }
 
 /* 날짜 뱃지 */
 .cv-date {
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   color: #718096;
   font-weight: 500;
   display: inline-block;
   background: #edf2f7;
-  padding: 2px 8px;
-  border-radius: 6px;
-  margin-top: 5px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-top: 4px;
 }
 
-/* 스킬 태그 스타일 (뱃지 형태) */
+/* 스킬 태그 스타일 */
 .skill-tag {
   display: inline-block;
   background-color: #ebf8ff;
   color: #2c5282;
   padding: 3px 8px;
   border-radius: 6px;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   font-weight: 600;
   margin-right: 5px;
   margin-bottom: 5px;
@@ -93,21 +99,21 @@ redirect_from:
 .skill-category {
   font-weight: 700;
   color: #2c3e50;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
   display: block;
-  margin-top: 10px;
-  font-size: 0.95rem;
+  margin-top: 8px;
+  font-size: 0.9rem;
 }
 
 /* 리스트 스타일 */
 ul.cv-list { list-style: none; padding: 0; margin: 0; }
-ul.cv-list li { margin-bottom: 5px; padding-left: 15px; position: relative; font-size: 0.95rem; color: #4a5568; }
+ul.cv-list li { margin-bottom: 4px; padding-left: 15px; position: relative; font-size: 0.9rem; color: #4a5568; line-height: 1.5; }
 ul.cv-list li::before { content: "•"; position: absolute; left: 0; color: #3182ce; font-weight: bold; }
 
 /* 버튼 스타일 */
 .btn-download {
-  background-color: #2c3e50; color: white !important; padding: 10px 20px;
-  border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 0.95em;
+  background-color: #2c3e50; color: white !important; padding: 8px 16px;
+  border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 0.9em;
   transition: background 0.2s; display: inline-block;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
@@ -116,24 +122,17 @@ ul.cv-list li::before { content: "•"; position: absolute; left: 0; color: #318
 
 <div class="cv-container">
 
-  <div style="margin-bottom: 30px; text-align: right;">
+  <div style="margin-bottom: 20px; text-align: right;">
     <a href="#" class="btn-download">📥 Download CV (PDF)</a>
   </div>
 
   <div class="cv-card" style="border-left: 3px solid #2c3e50; background-color: #f7fafc;">
-    <h3 style="margin-top:0; color:#2c3e50; font-size: 1.2rem;">🔬 Research Interests</h3>
-    
-    <div style="margin-bottom: 15px;">
-      <strong style="color:#2c5282;">Thesis Interest (Ph.D.)</strong>
-      <p style="margin: 5px 0 0 0; color:#4a5568; font-size: 0.95rem; line-height: 1.6;">
-        Hybridizing physics-based simulations (FEP/MD) with <strong>data-driven AI</strong> for precise structure-based drug design, specifically targeting GPCRs and metabolic enzymes.
-      </p>
-    </div>
+    <h3 style="margin-top:0; color:#2c3e50; font-size: 1.2rem; margin-bottom: 10px;">🔬 Research Interests</h3>
     
     <div>
-      <strong style="color:#2c5282;">Post-doctoral Interest (Future)</strong>
+      <strong style="color:#2c5282;">Thesis Interest (Ph.D.)</strong>
       <p style="margin: 5px 0 0 0; color:#4a5568; font-size: 0.95rem; line-height: 1.6;">
-        Integration of Generative AI with Free Energy Calculations for <i>De Novo</i> Drug Design and automated multi-scale pipelines for ADMET prediction.
+        Utilizing <strong>physics-based simulations (FEP/MD)</strong> and developing <strong>bioinformatics platforms</strong> for precise structure-based drug design, specifically targeting GPCRs and metabolic enzymes.
       </p>
     </div>
   </div>
@@ -162,13 +161,13 @@ ul.cv-list li::before { content: "•"; position: absolute; left: 0; color: #318
   <div class="cv-section-title">📜 Publications</div>
 
   <div class="cv-card">
-    <strong style="font-size:1.1em; color:#e53e3e; display:block; margin-bottom:10px;">In Preparation / Under Review</strong>
+    <strong style="font-size:1.05em; color:#e53e3e; display:block; margin-bottom:8px;">In Preparation / Under Review</strong>
     <ul class="cv-list">
       <li>
         <strong>CYP-MAP: Comprehensive Database and Multi-Level GNN Model for Site of Metabolism (SoM) Prediction</strong><br>
         <span style="font-size:0.9em; color:#718096;">(In preparation)</span>
       </li>
-      <li style="margin-top:10px;">
+      <li style="margin-top:8px;">
         <strong>Promising Clue for a Functional Antagonism of FTY720-P by New Heterocyclic Analogues and Molecular Docking Analysis</strong><br>
         <span style="font-size:0.9em; color:#718096;">(In preparation)</span>
       </li>
@@ -176,24 +175,37 @@ ul.cv-list li::before { content: "•"; position: absolute; left: 0; color: #318
   </div>
 
   <div class="cv-card">
-    <strong style="font-size:1.1em; color:#2c5282; display:block; margin-bottom:10px;">Published (Selected)</strong>
+    <strong style="font-size:1.05em; color:#2c5282; display:block; margin-bottom:8px;">Published (Selected)</strong>
     <ul class="cv-list">
       <li>
         <strong>MetaboGNN: predicting liver metabolic stability with graph neural networks...</strong><br>
         <span style="font-size:0.9em;">Park JH†, <strong>Han R†</strong>, et al. <i>Journal of Cheminformatics</i> (2025)</span>
       </li>
-      <li style="margin-top:10px;">
+      <li style="margin-top:8px;">
         <strong>Unique molecular architecture of N-glycosylated TM4SF5 dimer...</strong><br>
         <span style="font-size:0.9em;">Lee Y, ..., <strong>Han R</strong>, ..., Lee JW* <i>Journal of Advanced Research</i> (2025)</span>
       </li>
-      <li style="margin-top:10px;">
+      <li style="margin-top:8px;">
         <strong>Revolutionizing Medicinal Chemistry: The Application of AI...</strong><br>
         <span style="font-size:0.9em;"><strong>Han R†</strong>, et al. <i>Pharmaceuticals</i> (2023)</span>
       </li>
     </ul>
-    <div style="text-align:right; margin-top:15px;">
-      <a href="/publications/" style="color:#3182ce; font-weight:bold; text-decoration:none; font-size:0.9rem;">View All Publications →</a>
+    <div style="text-align:right; margin-top:10px;">
+      <a href="/publications/" style="color:#3182ce; font-weight:bold; text-decoration:none; font-size:0.85rem;">View All Publications →</a>
     </div>
+  </div>
+
+  <div class="cv-section-title">💻 Development Projects</div>
+
+  <div class="cv-card">
+    [cite_start]<div class="cv-item-title">ProtHub: Integrated Platform for Protein-Ligand Interactions [cite: 1, 2, 3]</div>
+    <div class="cv-item-subtitle">Designed to consolidate scattered biological data and facilitate efficient analysis.</div>
+    <ul class="cv-list" style="margin-top:10px;">
+      [cite_start]<li><strong>Data Integration:</strong> Integrated heterogeneous data from UniProt, PDB, ChEMBL, and InterPro to construct a unified database for ligand-binding proteins. [cite: 2, 4]</li>
+      [cite_start]<li><strong>Chemical Space Visualization:</strong> Implemented interactive 2D visualization (t-SNE, PCA, UMAP) using Morgan fingerprints and Tanimoto coefficients to analyze ligand distribution. [cite: 1, 3]</li>
+      [cite_start]<li><strong>Web Features:</strong> Developed sequence similarity search (BLAST), detailed protein annotation pages, and sequence-identity heatmaps for intuitive analysis. [cite: 1, 3]</li>
+    </ul>
+    <div class="cv-date">Bioinformatics Web Platform</div>
   </div>
 
   <div class="cv-section-title">🏆 Honors & Awards</div>
@@ -230,20 +242,21 @@ ul.cv-list li::before { content: "•"; position: absolute; left: 0; color: #318
       <span class="skill-tag">PyMOL / VMD</span>
     </div>
 
-    <span class="skill-category">Data Science & Informatics</span>
+    <span class="skill-category">Data Science & Chemoinformatics</span>
     <div>
       <span class="skill-tag">RDKit</span>
       <span class="skill-tag">Morgan Fingerprints</span>
-      <span class="skill-tag">Clustering</span>
+      <span class="skill-tag">Tanimoto Similarity</span>
+      <span class="skill-tag">Clustering (t-SNE/PCA)</span>
     </div>
 
-    <span class="skill-category">Environment & Tools (Detailed)</span>
+    <span class="skill-category">Web & Environment</span>
     <div>
       <span class="skill-tag">Linux (Ubuntu/CentOS)</span>
       <span class="skill-tag">HPC Cluster (Slurm)</span>
       <span class="skill-tag">Git/GitHub</span>
       <span class="skill-tag">Python Scripting</span>
-      <span class="skill-tag">HTML/CSS/PHP/JS</span>
+      <span class="skill-tag">HTML/CSS/JS</span>
     </div>
   </div>
 
