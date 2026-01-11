@@ -125,9 +125,10 @@ You can also find my articles on <a href="https://scholar.google.com/citations?u
 
 <div class="pub-container">
 
-  {% assign postsByYear = site.publications | group_by_exp: "post", "post.date | date: '%Y'" %}
+  {% assign sorted_pubs = site.publications | sort: 'date' | reverse %}
+  {% assign postsByYear = sorted_pubs | group_by_exp: "post", "post.date | date: '%Y'" %}
   
-  {% for year in postsByYear %}
+  {% for year in postsByYear reversed %}
     <div class="year-header">{{ year.name }}</div>
     
     {% for post in year.items %}
