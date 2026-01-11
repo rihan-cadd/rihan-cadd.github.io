@@ -36,3 +36,23 @@ I am interested in applying computational methods to solve biological problems, 
 * **Email:** [ri.han.cadd@gmail.com](mailto:ri.han.cadd@gmail.com)
 * **Lab:** [Chem/Bioinformatics Lab](https://sites.google.com/view/cau-chembioinfo/home)
 * **Location:** Seoul, South Korea
+
+---
+### 🧩 Life Outside the Lab
+When I am not docking molecules, I enjoy observing nature's own molecular machines. I am a proud keeper of **Rhinoceros Beetles** and **Silkworms**, and I love organizing fun events like the *"Cocoon Sex Determination Championship"*!
+
+<div style="text-align: center; margin-top: 20px; margin-bottom: 40px;">
+  <a href="/life/" style="
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #2c3e50;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: background 0.2s;
+  ">
+    🐞 View My Breeding & Projects Journal
+  </a>
+</div>
