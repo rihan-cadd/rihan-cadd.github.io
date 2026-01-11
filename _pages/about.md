@@ -24,11 +24,11 @@ I am interested in applying computational methods to solve biological problems, 
 ---
 
 ### 🔥 Latest News
-* **[Mar 2025]** 📝 New paper accepted in *Journal of Cheminformatics*! ("MetaboGNN: predicting liver metabolic stability...")
+* **[Oct 2025]** 🎤 Delivered an oral presentation at the **136th General Meeting of the Korean Chemical Society (KCS)**.
+* **[Mar 2025]** 📝 New paper accepted in *Journal of Cheminformatics*! ("MetaboGNN: predicting liver metabolic stability...").
 * **[Feb 2025]** 🏆 Received **Best Poster Award** at Asia Hub for e-Drug Discovery Symposium.
 * **[Jan 2025]** 🎤 Delivered an oral presentation at the Graduate Research Symposium.
-* **[Oct 2024]** 🏅 Received **Travel Award** at the PSK International Convention.
-* **[Aug 2023]** 🥇 Won the **Grand Prize (Minister Award)** at the New Drug Development AI Competition.
+* **[Oct 2024]** 🏅 Received **Travel Award** from the **Korean Chemical Society (KCS)**.
 
 ---
 
