@@ -28,7 +28,7 @@ author:
   pronouns         : "she/her"  
   bio              : "Short biography for the left-hand sidebar"
   location         : "Seoul, South Korea"
-  employer         : "Red Brick University"
+  employer         : "Chung-Ang University"
   uri              : # URL
   email            : "ri.han.cadd@gmail.com" 
 
@@ -57,7 +57,7 @@ author:
 
   # Social media
   artstation       : # Username
-  bluesky          : "bsky.app" # Replace this with you Bluesky username
+  bluesky          : # Replace this with you Bluesky username
   facebook         : # Username
   flickr           : # Username
   foursquare       : # Username
