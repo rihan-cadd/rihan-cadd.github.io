@@ -26,14 +26,7 @@ author:
   avatar           : "profile.png"
   name             : "Ri Han"
   pronouns         : "she/her"  
-  bio              : |
-    PhD Candidate (Coursework Completed)
-    at Chung-Ang University.
-
-    Focusing on GPCR, FEP, AI,
-    Docking & Virtual Screening.
-
-    Insect Enthusiast.
+  bio              : "PhD candidate (coursework completed) specializing in GPCR, FEP, AI, and docking & virtual screening, as well as an insect enthusiast."
   location         : "Seoul, South Korea"
   employer         : "Chung-Ang University"
   uri              : # URL
