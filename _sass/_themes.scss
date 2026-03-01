@@ -206,3 +206,10 @@ html[data-theme-setting="light"] {
 #light-toggle:hover .fa-half-sun-moon::after {
   color: var(--global-theme-color);
 }
+
+.publications .author b, 
+.publications .author strong, 
+.publications .author u {
+  color: var(--global-theme-color) !important;
+  text-decoration-color: var(--global-theme-color) !important;
+}
