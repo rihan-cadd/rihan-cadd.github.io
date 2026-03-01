@@ -409,7 +409,7 @@ ninja.data = [{
           title: 'Honored to receive the Best Poster Award (2nd Class) at the Asia Hub...',
           description: "",
           section: "News",},{id: "news-delivered-an-oral-presentation-titled-improving-sar-prediction-accuracy-during-lead-optimization-through-free-energy-perturbation-at-the-136th-general-meeting-of-the-korean-chemical-society-kcs",
-          title: 'Delivered an ‘oral presentation’ titled ‘“Improving SAR Prediction Accuracy During Lead Optimization through...',
+          title: 'Delivered an oral presentation titled Improving SAR Prediction Accuracy During Lead Optimization through...',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
