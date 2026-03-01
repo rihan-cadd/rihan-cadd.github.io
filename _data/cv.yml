@@ -88,13 +88,13 @@ cv:
         authors: ["Min Ju Kim", "Ki-Lan Yu", "Ri Han", "Yoonji Lee", "Kyungjae Oh", "Ji-Chang You"]
         publisher: "ACS Infectious Diseases"
         releaseDate: "2023-08-11"
-        url: "https://doi.org/10.1021/acsinfecdis.3c00185"
+        url: "https://doi.org/10.1021/acsinfecdis.3c00166"
 
       - title: "Systematic analyses of the sequence conservation and ligand interaction patterns of purinergic P1 and P2Y receptors provide a structural basis for receptor selectivity"
         authors: ["Ri Han", "Heesung Yoon", "Jiho Yoo", "Yoonji Lee"]
         publisher: "Computational and Structural Biotechnology Journal"
         releaseDate: "2023-01-20"
-        url: "https://doi.org/10.1016/j.csbj.2023.01.011"
+        url: "https://doi.org/10.1016/j.csbj.2023.01.010"
 
     Skills:
       - name: Computational Chemistry
