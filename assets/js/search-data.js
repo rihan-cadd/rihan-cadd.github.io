@@ -405,11 +405,6 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-announcement-3",
-          title: 'Announcement_3',
-          description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/announcement_3/";
             },},{id: "news-honored-to-receive-the-best-poster-award-2nd-class-at-the-asia-hub-for-e-drug-discovery-symposium-2025-ahedd2025",
           title: 'Honored to receive the Best Poster Award (2nd Class) at the Asia Hub...',
           description: "",
