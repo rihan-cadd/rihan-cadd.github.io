@@ -2,179 +2,159 @@ cv:
   name: Ri Han
   label: Scientist
   email: ri.han.cadd@gmail.com
-  location: Princeton, NJ
+  Label: PhD Candidate at Chung-Ang University
   image: ""
-  summary: A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time
+  summary: I am a Ph.D. student in the Department of Global Innovative Drugs at Chung-Ang University. My research focuses on sequence-structure analysis of Purinergic receptors using MD simulations, FEP calculations, and molecular docking.
 
   social_networks:
-    - network: X
-      username: AlbertEinstein
     - network: GitHub
-      username: example
+      username: rihan-cadd
     - network: LinkedIn
-      username: example
-
-  address:
-    street: 2712 Broadway St
-    city: San Francisco
-    region: California
-    postalCode: CA 94115
-    countryCode: US
+      username: rihan-cadd
+    - network: ORCID
+      username: 0000-0001-7266-7996
 
   sections:
     Education:
-      - institution: University of Zurich
-        location: Zurich, Switzerland
-        url: https://www.uzh.ch/
-        area: Physics
-        studyType: PhD
-        start_date: 1900
-        end_date: 1905
-        score: ""
-        courses: "Theory of Relativity"
+      - institution: Chung-Ang University
+        location: Seoul, South Korea
+        area: Global Innovative Drug
+        studyType: Ph.D. Candidate
+        start_date: 2023
+        end_date: Present
         highlights:
-          - Description 1.
-          - Description 2.
+          - Chemical/Bioinformatics Laboratory
+          - Advisor: Professor Yoonji Lee
 
-      - institution: Eidgenössische Technische Hochschule
-        location: Zurich, Switzerland
-        area: Physics
-        studyType: Federal teaching diploma
-        start_date: 1896
-        end_date: 1900
+      - institution: Chung-Ang University
+        location: Seoul, South Korea
+        area: Global Innovative Drug
+        studyType: Master
+        start_date: 2021
+        end_date: 2023
         highlights:
-          - Description 1.
-          - Description 2.
-
-    Experience:
-      - company: Institute for Advanced Study, Princeton University
-        position: Professor of Theoretical Physics
-        location: Princeton University, NJ
-        start_date: 1933
-        end_date: 1955
-        summary: Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.
-        highlights:
-          - Relativity
-          - Description 2.
-
-      - company: California Institute of Technology
-        position: Visiting Professor
-        location: Pasadena, California, US
-        start_date: 1933
-        end_date: 1933
-        highlights:
-          - Description 1.
-          - Description 2.
-
-      - company: Kaiser Wilhelm Institute for Physics
-        position: Director
-        location: Berlin, Germany
-        start_date: 1917
-        end_date: 1933
-
-      - company: Karl-Ferdinand University
-        position: Professor of Theoretical Physics
-        location: Prague, Czechoslovakia
-        start_date: 1911
-        end_date: 1917
-
-      - company: University of Zurich
-        position: Associate Professor of Theoretical Physics
-        location: Zurich, Switzerland
-        start_date: 1909
-        end_date: 1911
-
-    Volunteer:
-      - company: People's Climate March
-        position: Lead Organizer
-        location: Zurich, Switzerland
-        start_date: 2014-04-01
-        end_date: 2015-07-01
-        summary: Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.
-        highlights:
-          - "Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march."
-          - "Men of the year 2014 by Time magazine"
+          - Chemical/Bioinformatics Laboratory
+          - Advisor: Professor Yoonji Lee
+          
+      - institution: Daejin University
+        location: Pocheon, Gyeonggi
+        area: Life Sciences
+        studyType: Bachelor
+        start_date: 2009
+        end_date: 2013
 
     Awards:
-      - title: Nobel Prize in Physics
-        authors:
-          - "Royal Swedish Academy of Sciences"
-        date: 1921-11-01
-        awarder: Royal Swedish Academy of Sciences
-        url: https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/
-        summary: The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'
+      - title: Best Poster Presentation Award
+        date: 2023-06
+        awarder: 14th AIMECS (AFMC International Medicinal Chemistry Symposium)
+        summary: Structural Analysis of Purinergic P1 and P2Y Receptors: Insights into Ligand Recognition and Selectivity
 
-      - title: Max Planck Medal
-        authors:
-          - "German Physical Society"
-        date: 2029
-        awarder: German Physical Society
-        summary: Awarded for outstanding scientific achievement
+      - title: Grand Prize (Minister Award)
+        date: 2023-11
+        awarder: New Drug Development AI Competition (Hosted by MSIT)
+        summary: The 1st New Drug Development AI Competition "JUMP AI 2023"
+
+      - title: PSK Travel Award
+        date: 2024-09
+        awarder: 2024 Fall International Convention of The Pharmaceutical Society of Korea
+        summary: Improving Structure-Activity Relationship Predictions in Lead Optimization Using Free Energy Perturbation.
+        
+      - title: Best Poster Award (2nd Class)
+        date: 2025-09
+        awarder: Asia Hub for e-Drug Discovery Symposium 2025 (AHEDD2025)
+        summary: MetaboGNN: Prediction of liver metabolic stability using gragh neural networks and cross-species data
 
     Publications:
-      - title: Zur Elektrodynamik bewegter Körper
+      - title: "MetaboGNN: predicting liver metabolic stability with graph neural networks and cross-species data"
         authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-06-30
-        url: https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies
-        summary: It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source.
+          - Jun Hyeong Park
+          - Ri Han
+          - Junbo Jang
+          - Jisan Kim
+          - Joonki Paik
+          - Jaesung Heo
+          - Yoonji Lee
+        publisher: Journal of Cheminformatics
+        releaseDate: 2025-01-15
+        url: https://doi.org/10.1186/s13321-025-01089-y
+        [cite_start]summary: Developed an advanced GNN-based model for predicting liver metabolic stability by incorporating interspecies differences between human and mouse microsomes. [cite: 12, 15]
 
-      - title: Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt
+      - title: "Unique molecular architecture of N-glycosylated TM4SF5 dimer highlights evolutionary and structural divergence among small four-transmembrane protein families"
         authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-03-18
-        url: https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt
-        summary: In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921.
+          - Yoonji Lee
+          - Ji Eon Kim
+          - Wonsik Kim
+          - Soyeon Kim
+          - Ri Han
+          - Donghyuk Suh
+          - Eunmi Kim
+          - Eun-Ae Shin
+          - Kyung-hee Pyo
+          - Jae-Ho Lee
+          - Sanghee Yoon
+          - Yong-In Kim
+          - Je-Yoel Cho
+          - Sun Choi
+          - Jung Weon Lee
+        publisher: Journal of Advanced Research
+        releaseDate: 2025-11-28
+        url: https://doi.org/10.1016/j.jare.2025.11.066
+        [cite_start]summary: Investigated the unique structural and evolutionary aspects of the N-glycosylated TM4SF5 dimer and its cholesterol binding interfaces. [cite: 58, 59]
 
-      - title: Die Grundlage der allgemeinen Relativitätstheorie
+      - title: "Revolutionizing medicinal chemistry: the application of artificial intelligence (AI) in early drug discovery"
         authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1916-03-20
-        url: https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie
-        summary: The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914).
+          - Ri Han
+          - Heesung Yoon
+          - Gwangbeom Kim
+          - Heesook Lee
+          - Yoonji Lee
+        publisher: Pharmaceuticals
+        releaseDate: 2023-09-12
+        url: https://doi.org/10.3390/ph16091259
+        summary: A comprehensive review of AI applications in early-stage medicinal chemistry and drug discovery processes.
 
+      - title: "Identification of a non-nucleoside reverse transcriptase inhibitor against human immunodeficiency virus-1"
+        authors:
+          - Min Ju Kim
+          - Ki-Lan Yu
+          - Ri Han
+          - Yoonji Lee
+          - Kyungjae Oh
+          - Ji-Chang You
+        publisher: ACS Infectious Diseases
+        releaseDate: 2023-08-11
+        url: https://doi.org/10.1021/acsinfecdis.3c00185
+        summary: Discovered a novel HIV-1 reverse transcriptase inhibitor through integrated computational screening and experimental validation.
+
+      - title: "Systematic analyses of the sequence conservation and ligand interaction patterns of purinergic P1 and P2Y receptors provide a structural basis for receptor selectivity"
+        authors:
+          - Ri Han
+          - Heesung Yoon
+          - Jiho Yoo
+          - Yoonji Lee
+        publisher: Computational and Structural Biotechnology Journal
+        releaseDate: 2023-01-20
+        url: https://doi.org/10.1016/j.csbj.2023.01.011
+        summary: Performed systematic structural analysis to elucidate the selectivity and interaction patterns of ligands across purinergic receptor subfamilies.
+        
     Skills:
-      - name: Physics
-        level: Master
+      - name: Computational Chemistry
         icon: fa-solid fa-hashtag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
+        keywords: "MD Simulation, Free Energy Perturbation (FEP), Molecular Docking"
+      - name: Bioinformatics & AI
+        icon: fa-solid fa-hashtag
+        keywords: "Graph Neural Networks (GNN), Deep Learning"
 
     Languages:
-      - name: German
+      - name: Korean
         summary: "Native speaker"
 
       - name: English
-        summary: "Fluent"
+        summary: "Beginner"
 
     Interests:
-      - name: Physics
-        icon: fa-solid fa-tag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
+      - name: Research
+        keywords: "Purinergic Receptors, Lead Optimization, Pharmacokinetics"
+      - name: Entomology
+        keywords: "Raising Silkworms, Rhinoceros Beetles"
 
-    Certificates:
-      - name: Machine Learning
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-location-dot
-
-      - name: Quantum Computing
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-tag
-
-      - name: Quantum Information
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-envelope
-
-    Projects:
-      - name: Quantum Computing
-        summary: Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.
-        highlights:
-          - Quantum Teleportation
-          - Quantum Cryptography
-        start_date: 2018-01-01
-        end_date: 2018-01-01
