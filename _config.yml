@@ -8,15 +8,19 @@ middle_name:
 last_name: Han
 contact_note: >
   You can even add a little note about which of these is the best way to reach you.
-description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+description: >
+  I am a Ph.D. student in the Department of Global Innovative Drugs at Chung-Ang University, 
+  conducting research in the Chemical/Bioinformatics Laboratory under the guidance of Professor Yunji Lee. 
+  My academic focus lies in the sequence-structure analysis of Purinergic receptors, 
+  employing computational methods such as MD (Molecular Dynamics) simulations, FEP (Free Energy Perturbation) calculations, and molecular docking. 
+  Outside the lab, I am a passionate insect enthusiast who enjoys raising silkworms and rhinoceros beetles.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
   Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
-keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
-lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+keywords: purinergic receptors, MD Simulation, small molecule docking, Free energy perturbation
+lang: en, kr # the language of your site (for example: en, fr, cn, ru, etc.)
+icon: 🐛 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://rihan-cadd.github.io # the base hostname & protocol for your site
 baseurl:  # the subpath of your site, e.g. /blog/. Leave blank for root
