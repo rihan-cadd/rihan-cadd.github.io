@@ -10,12 +10,12 @@
   --global-code-bg-color: #{v.$code-bg-color-light};
   --global-text-color: #{v.$black-color};
   --global-text-color-light: #{v.$grey-color};
-  --global-theme-color: #F36D90;
-  --global-hover-color: #F36D90;
+  --global-theme-color: #f36d90;
+  --global-hover-color: #f36d90;
   --global-hover-text-color: #{v.$white-color};
   --global-footer-bg-color: #{v.$grey-color-dark};
   --global-footer-text-color: #{v.$grey-color-light};
-  --global-footer-link-color: #F36D90;
+  --global-footer-link-color: #f36d90;
   --global-distill-app-color: #{v.$grey-color};
   --global-divider-color: rgba(0, 0, 0, 0.1);
   --global-card-bg-color: #{v.$white-color};
@@ -80,12 +80,12 @@ html[data-theme="dark"] {
   --global-code-bg-color: #{v.$code-bg-color-dark};
   --global-text-color: #{v.$grey-color-light};
   --global-text-color-light: #{v.$grey-color};
-  --global-theme-color: #F36D90;
-  --global-hover-color: #F36D90;
+  --global-theme-color: #f36d90;
+  --global-hover-color: #f36d90;
   --global-hover-text-color: #{v.$white-color};
   --global-footer-bg-color: #{v.$grey-color-light};
   --global-footer-text-color: #{v.$grey-color-dark};
-  --global-footer-link-color: #F36D90;
+  --global-footer-link-color: #f36d90;
   --global-distill-app-color: #{v.$grey-color-light};
   --global-divider-color: #424246;
   --global-card-bg-color: #{v.$grey-900};
@@ -157,7 +157,6 @@ html[data-theme-setting="light"] {
 .fa-half-sun-moon {
   position: relative;
   display: inline-block;
-
   --fa-font: var(--fa-font-solid);
   speak: none;
   font-style: normal;
@@ -165,7 +164,6 @@ html[data-theme-setting="light"] {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
   width: 1em;
   height: 1em;
 }
@@ -194,9 +192,14 @@ html[data-theme-setting="light"] {
 .fa-half-sun-moon::after {
   content: "\f185";
   color: var(--global-text-color);
-  clip-path: polygon(calc(50% + 0.5px) 0, 100% 0, 100% 100%, calc(50% + 0.5px) 100%);
-  right: -1.5px; /* slight overflow to avoid right-edge clipping */
-  transform: translateX(-1px); /* visually re-center the sun half */
+  clip-path: polygon(
+    calc(50% + 0.5px) 0,
+    100% 0,
+    100% 100%,
+    calc(50% + 0.5px) 100%
+  );
+  right: -1.5px;
+  transform: translateX(-1px);
 }
 
 #light-toggle:hover .fa-half-sun-moon::before {
@@ -207,9 +210,25 @@ html[data-theme-setting="light"] {
   color: var(--global-theme-color);
 }
 
-.publications .author b, 
-.publications .author strong, 
+/* Publications author highlight */
+.publications .author b,
+.publications .author strong,
 .publications .author u {
   color: var(--global-theme-color) !important;
   text-decoration-color: var(--global-theme-color) !important;
+}
+
+/* Global link color override */
+a {
+  color: var(--global-theme-color);
+  &:hover {
+    color: var(--global-theme-color);
+    text-decoration: underline;
+  }
+}
+
+.navbar a {
+  &:hover {
+    color: var(--global-theme-color) !important;
+  }
 }
