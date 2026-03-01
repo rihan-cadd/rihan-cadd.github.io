@@ -186,3 +186,11 @@
 .citation-number {
   color: var(--global-theme-color);
 }
+
+.bibliography {
+  em {
+    font-style: normal;  /* 이탤릭체 제거 (원하시면 이 줄 삭제) */
+    font-weight: bold;   /* 굵게 표시 */
+    color: var(--global-theme-color) !important; /* 테마 색상 강제 적용 */
+  }
+}
