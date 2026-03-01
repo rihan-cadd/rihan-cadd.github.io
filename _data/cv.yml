@@ -99,8 +99,6 @@ cv:
     Skills:
       - name: Computational Chemistry
         keywords: "MD Simulation, Free Energy Perturbation (FEP), Molecular Docking"
-      - name: Bioinformatics & AI
-        keywords: "Graph Neural Networks (GNN), Deep Learning"
 
     Languages:
       - name: Korean
@@ -108,8 +106,3 @@ cv:
       - name: English
         summary: "Beginner"
 
-    Interests:
-      - name: Research
-        keywords: "Purinergic Receptors, Lead Optimization, Pharmacokinetics"
-      - name: Entomology
-        keywords: "Raising Silkworms, Rhinoceros Beetles"
