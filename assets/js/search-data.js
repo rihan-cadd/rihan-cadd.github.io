@@ -410,8 +410,8 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_3/";
-            },},{id: "news-cite-start-honored-to-receive-the-best-poster-award-2nd-class-at-the-asia-hub-for-e-drug-discovery-symposium-2025-ahedd2025-cite-94-95-cite-start-the-award-was-presented-for-the-work-on-metabognn-predicting-liver-metabolic-stability-using-gnns-and-cross-species-data-cite-99-102",
-          title: '[cite_start]Honored to receive the Best Poster Award (2nd Class) at the Asia Hub...',
+            },},{id: "news-honored-to-receive-the-best-poster-award-2nd-class-at-the-asia-hub-for-e-drug-discovery-symposium-2025-ahedd2025",
+          title: 'Honored to receive the Best Poster Award (2nd Class) at the Asia Hub...',
           description: "",
           section: "News",},{id: "news-cite-start-delivered-an-oral-presentation-titled-improving-sar-prediction-accuracy-during-lead-optimization-through-free-energy-perturbation-at-the-136th-general-meeting-of-the-korean-chemical-society-kcs-cite-110-135-136-151-cite-start-the-talk-focused-on-enhancing-prediction-accuracy-in-lead-optimization-using-fep-cite-137-138-139",
           title: '[cite_start]Delivered an oral presentation titled “Improving SAR Prediction Accuracy During Lead Optimization through...',
