@@ -213,21 +213,3 @@ html[data-theme-setting="light"] {
   color: var(--global-theme-color) !important;
   text-decoration-color: var(--global-theme-color) !important;
 }
-
-
-a {
-  color: var(--global-theme-color);
-  transition: color 0.2s ease-in-out;
-
-  &:hover {
-    color: var(--global-hover-color);
-    text-decoration: underline;
-  }
-}
-
-.navbar a {
-  color: var(--global-text-color) !important;
-  &:hover {
-    color: var(--global-theme-color) !important;
-  }
-}
