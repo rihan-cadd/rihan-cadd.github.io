@@ -26,17 +26,17 @@ cv:
         end_date: Present
         highlights:
           - Chemical/Bioinformatics Laboratory
-          - "Advisor: Professor Yoonji Lee"
+          - "Advisor: Prof. Yoonji Lee"
 
       - institution: Chung-Ang University
         location: Seoul, South Korea
-        area: Global Innovative Drug
+        area: Pharmacy
         studyType: "<span style='color: var(--global-theme-color)'>Master</span>"
         start_date: 2021
         end_date: 2023
         highlights:
           - Chemical/Bioinformatics Laboratory
-          - "Advisor: Professor Yoonji Lee"
+          - "Advisor: Prof. Yoonji Lee"
 
       - institution: Daejin University
         location: Pocheon, Gyeonggi
