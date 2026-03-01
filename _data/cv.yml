@@ -24,8 +24,7 @@ cv:
         studyType: Ph.D. Candidate
         start_date: 2023
         end_date: Present
-        highlights:
-          - Prof. Yoonji Lee | Chemical/Bioinformatics Laboratory
+        Advisor: Prof. Yoonji Lee
           
       - institution: Chung-Ang University
         location: Seoul, South Korea
@@ -33,8 +32,7 @@ cv:
         studyType: Master
         start_date: 2021
         end_date: 2023
-        highlights:
-          - Prof. Yoonji Lee | Chemical/Bioinformatics Laboratory
+        Advisor: Prof. Yoonji Lee
 
       - institution: Daejin University
         location: Pocheon, Gyeonggi
