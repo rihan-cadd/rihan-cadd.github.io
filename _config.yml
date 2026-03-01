@@ -7,7 +7,7 @@ first_name: Ri
 middle_name: 
 last_name: Han
 contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
+  The best way to reach me is via email for academic inquiries or collaboration.
 description: >
   I am a Ph.D. student in the Department of Global Innovative Drugs at Chung-Ang University, 
   conducting research in the Chemical/Bioinformatics Laboratory under the guidance of Professor Yunji Lee. 
@@ -19,30 +19,26 @@ footer_text: >
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
   Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
 keywords: purinergic receptors, MD Simulation, small molecule docking, Free energy perturbation
-lang: en, kr # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: 🐛 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+lang: en # multiple languages use a single string like "en" or "en-us"
+icon: 🐛 # the emoji used as the favicon
 
 url: https://rihan-cadd.github.io # the base hostname & protocol for your site
-baseurl:  # the subpath of your site, e.g. /blog/. Leave blank for root
-last_updated: false # set to true if you want to display last updated in the footer
-impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
-back_to_top: true # set to false to disable the back to top button
+baseurl: # the subpath of your site. Leave blank for root
+last_updated: false
+impressum_path: 
+back_to_top: true
 
 # -----------------------------------------------------------------------------
 # Theme
 # -----------------------------------------------------------------------------
 
-# repo color theme
-repo_theme_light: default # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
-repo_theme_dark: dark # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
+repo_theme_light: default
+repo_theme_dark: dark
 repo_trophies:
   enabled: true
-  theme_light: flat # https://github.com/ryo-ma/github-profile-trophy
-  theme_dark: gitdimmed # https://github.com/ryo-ma/github-profile-trophy
+  theme_light: flat
+  theme_dark: gitdimmed
 
-# External service URLs for repository page
-# To use a different instance or service for displaying GitHub stats and trophies,
-# update these URLs. These are used in the repository templates.
 external_services:
   github_readme_stats_url: https://github-readme-stats.vercel.app
   github_profile_trophy_url: https://github-profile-trophy.vercel.app
@@ -63,8 +59,6 @@ search_enabled: true
 socials_in_search: true
 posts_in_search: true
 bib_search: true
-
-# Dimensions
 max_width: 930px
 
 # -----------------------------------------------------------------------------
@@ -284,11 +278,9 @@ display_categories: ["external-services"] # these categories will be displayed o
 
 scholar:
   last_name: [Han]
-  first_name: [Ri, R]
-
+  first_name: [Ri, R.]
   style: apa
   locale: en
-
   source: /_bibliography/
   bibliography: papers.bib
   bibliography_template: bib
