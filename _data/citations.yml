@@ -1,8 +1,8 @@
 metadata:
-  last_updated: '2026-03-16'
+  last_updated: '2026-03-23'
 papers:
   bFx3EOIAAAAJ:2osOgNQ5qMEC:
-    citations: 3
+    citations: 4
     title: 'MetaboGNN: predicting liver metabolic stability with graph neural networks and cross-species data'
     year: '2025'
   bFx3EOIAAAAJ:9yKSN-GCB0IC:
@@ -14,7 +14,7 @@ papers:
     title: Unique molecular architecture of N-glycosylated TM4SF5 dimer highlights evolutionary and structural divergence among small four-transmembrane protein families
     year: '2025'
   bFx3EOIAAAAJ:u-x6o8ySG0sC:
-    citations: 220
+    citations: 222
     title: 'Revolutionizing medicinal chemistry: the application of artificial intelligence (AI) in early drug discovery'
     year: '2023'
   bFx3EOIAAAAJ:u5HHmVD_uO8C:
